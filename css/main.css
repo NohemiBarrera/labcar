@@ -164,6 +164,15 @@ img#mapa{
 .inputMod{
 	width: 60%;
 }
+#siCuenta{
+	width: 100%;
+	background-color: black;
+	color: white;
+}
+#nuevaCuenta{
+	color: grey;
+	text-align: center;
+}
 p>a{
 	font-size: 1em;
 }
