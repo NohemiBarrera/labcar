@@ -14,11 +14,36 @@
 	    <div class="navbar-header navbar-fixed-top menu">
 			<ul class="nav nav-pills">
 				<li><a class="navbar-brand" href="#"><img alt="Brand" src="img/logoForma.png"></a></li>
-				<li role="presentation"><a href="#">Inicia sesión</a></li>
+				<li><button type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal">Inicia sesión</button></li>
 				<li role="presentation"><a href="#ubicacion">Viaja</a></li>
 				<li role="presentation"><a href="#conduce">Conduce</a></li>
 			</ul>
 		</div>
+		<!--modal inicio sesion-->
+				<div class="modal fade col-md-8 col-md-offset-2" id="myModal" role="dialog">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal">&times;</button>
+				      </div>
+				      <div class="modal-body">
+				        <form>
+				        	<span class="glyphicon glyphicon-user"></span>
+				        	<input type="text" name="nombre" placeholder="Username" class="inputMod">
+				        	<br>
+				        	<br>
+				        	<span class="glyphicon glyphicon-lock"></span>
+				        	<input type="text" name="nombre" placeholder="Password" class="inputMod">
+				        	<br>
+				        	<br>
+				        	<button class="btn btn-lg sesion">LOGIN</button>
+				        	<p>Forgot password?<a href="#">Click here</a></p>
+				        </form>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!--fin modal inicio sesion-->
 		<div><img src="img/taxi.jpg" class="fondo"></div>
 	</header>
 	<section class="container totalForm" id="inicioSesion">
@@ -28,19 +53,40 @@
 						<h1>Disfruta del viaje<br>Eres dueño de tu tiempo</h1>
 						<h3>Viaja con <img src="img/logoBlanco.png"></h3>
 						<br>
-						<button class="btn btn-default show"><strong>REGÍSTRATE</strong></button>
+						<button class="btn btn-default show type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal2"><strong>REGÍSTRATE</strong></button>
 						<hr>
 						<button class="btn btn-default show"><strong>Conviértete en conductor</strong></button>
 						<button class="btn btn-default hidden"><strong>Descarga el app</strong></button>
 				</div>
 			</div>
 		</div>
+		<!--modal registro-->
+				<div class="modal fade col-md-8 col-md-offset-2" id="myModal2" role="dialog">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal">&times;</button>
+				      </div>
+				      <div class="modal-body">
+				        <form>
+				        	
+				        	<input type="text" name="nombre" placeholder="Nombre" class="inputMod form-group">
+				        	<input type="text" name="nombre" placeholder="Apellido" class="inputMod form-group">
+				        	<input type="email" name="nombre" placeholder="Correo electrónico" class="inputMod form-group">
+				        	<input type="number" name="nombre" placeholder="Teléfono" class="inputMod form-group">
+				        	<button class="btn btn-info registro">ENVIAR</button>
+				        </form>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!--fin modal registro-->
 	</section>
 	<section class="container telefono">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="col-md-4">
-					<h2 id="nuevaApp">La nueva app</h2>
+					<h2 id="nuevaApp"><strong>La nueva app</strong></h2>
 					<img src="img/iPhone6Plus.png" id="telefono">
 				</div>
 				<div class="col-md-5" id="descarga">
@@ -57,7 +103,7 @@
 			<div class="col-md-12" id="convertir">
 				<div class="col-md-4 col-md-offset-8">
 					<h2><strong>Conduce cuando quieras</strong></h2>
-					<p class="parrafoDescripcion">LabCar es una opción felxible para alcanzar tus metas financieras.</p>
+					<p class="parrafoDescripcion">LabCar es una opción flexible para alcanzar tus metas financieras.</p>
 					<button class="btn" id="conductor">Conviértete en conductor</button>
 				</div>
 			</div>
@@ -66,7 +112,7 @@
 	<section class="container" id="ubicacion">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="col-md-6">
+				<div class="col-md-6 col-xs-12">
 					<h2><strong>Tarifas</strong></h2>
 					<p class="parrafoDescripcion">Consulta las tarifas LabCar aquí</p>
 					<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
@@ -76,8 +122,8 @@
 					<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
 					<button class="btn ubicacion">Ingrese su destino</button>
 				</div>
-				<div class="col-md-6">
-					
+				<div class="col-md-6 col-xs-9">
+					<img src="img/mapa.png" id="mapa">
 				</div>
 			</div>
 		</div>
