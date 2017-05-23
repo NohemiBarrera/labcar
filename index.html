@@ -14,9 +14,9 @@
 	    <div class="navbar-header navbar-fixed-top menu">
 			<ul class="nav nav-pills">
 				<li><a class="navbar-brand" href="#"><img alt="Brand" src="img/logoForma.png"></a></li>
-				<li role="presentation"><a href="#">Viaja</a></li>
-				<li role="presentation"><a href="#">Conduce</a></li>
-				<li role="presentation"><a href="inicioSesion">Inicia sesión</a></li>
+				<li role="presentation"><a href="#">Inicia sesión</a></li>
+				<li role="presentation"><a href="#ubicacion">Viaja</a></li>
+				<li role="presentation"><a href="#conduce">Conduce</a></li>
 			</ul>
 		</div>
 		<div><img src="img/taxi.jpg" class="fondo"></div>
@@ -28,9 +28,10 @@
 						<h1>Disfruta del viaje<br>Eres dueño de tu tiempo</h1>
 						<h3>Viaja con <img src="img/logoBlanco.png"></h3>
 						<br>
-						<button class="btn btn-default"><strong>REGÍSTRATE</strong></button>
+						<button class="btn btn-default show"><strong>REGÍSTRATE</strong></button>
 						<hr>
-						<button class="btn btn-default"><strong>Conviértete en conductor</strong></button>
+						<button class="btn btn-default show"><strong>Conviértete en conductor</strong></button>
+						<button class="btn btn-default hidden"><strong>Descarga el app</strong></button>
 				</div>
 			</div>
 		</div>
@@ -39,9 +40,10 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="col-md-4">
+					<h2 id="nuevaApp">La nueva app</h2>
 					<img src="img/iPhone6Plus.png" id="telefono">
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-5" id="descarga">
 					<h2><strong>Descarga la nueva app</strong></h2>
 					<p class="parrafoDescripcion">La versión actualizada de LabCar<br>está llena de funciones para llegar<br> a donde quieras aún más fácil y<br>rápido.</p>
 					<p class="parrafoDescripcion">Con sólo tocar un botón, un auto<br>llega justo a tu ubicación. Súbete y<br>no te preocupes: tu conductor sabe<br>exactamente a dónde ir.</p>
@@ -84,7 +86,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="col-md-10 col-md-offset-1">
-					<img src="img/logoBlanco.png">
+					<img src="img/logoBlanco.png" id="footerLogo">
 					<hr>
 					<div class="col-md-3 col-md-offset-2">
 						<ul>
@@ -98,21 +100,31 @@
 							<li>Ciudades</li>
 						</ul>
 					</div>
-					<div class="col-md-3 col-md-offset-2">
+					<div class="col-md-3 col-md-offset-1">
 						<ul>
 							<li>Oportunidades</li>
 							<li>Nuestra historia</li>
 							<li>API de LabCar</li>
 							<li>Eventos</li>
-							<li>¿Cómo funciona?</li>
-							<li>Países</li>
-							<li>Seguridad</li>
-							<li>Ciudades</li>
+							<li>Desarrolladores</li>
+							<li>Servicios</li>
+							<li>Laboratoria</li>
+							<li>Coders</li>
 						</ul>
 					</div>
+					<div class="col-md-3 col-md-offset-9">
+						<img src="img/appstore.png" id="logoApp">
+					</div>
+				</div>
+
+				<div class="col-md-10 col-md-offset-1" id="fin">
+				<hr>
+					<span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>
+					2017 LabCar technologies Inc.
 				</div>
 			</div>
 		</div>
+
 	</footer>
 
 
