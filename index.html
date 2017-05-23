@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Labcar</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<header>
+			<!--<div class="container-fluid">-->
+	    <div class="navbar-header navbar-fixed-top menu">
+			<ul class="nav nav-pills">
+				<li><a class="navbar-brand" href="#"><img alt="Brand" src="img/logoForma.png"></a></li>
+				<li><button type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal">Inicia sesión</button></li>
+				<li role="presentation"><a href="#ubicacion">Viaja</a></li>
+				<li role="presentation"><a href="#conduce">Conduce</a></li>
+			</ul>
+		</div>
+		<!--modal inicio sesion-->
+				<div class="modal fade col-md-8 col-md-offset-2" id="myModal" role="dialog">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal">&times;</button>
+				      </div>
+				      <div class="modal-body">
+				        <form>
+				        	<span class="glyphicon glyphicon-user"></span>
+				        	<input type="text" name="nombre" placeholder="Username" class="inputMod">
+				        	<br>
+				        	<br>
+				        	<span class="glyphicon glyphicon-lock"></span>
+				        	<input type="text" name="nombre" placeholder="Password" class="inputMod">
+				        	<br>
+				        	<br>
+				        	<button class="btn btn-lg sesion">LOGIN</button>
+				        	<p>Forgot password?<a href="#">Click here</a></p>
+				        </form>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!--fin modal inicio sesion-->
+		<div><img src="img/taxi.jpg" class="fondo"></div>
+	</header>
+	<section class="container totalForm" id="inicioSesion">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="cuadroForm">
+						<h1>Disfruta del viaje<br>Eres dueño de tu tiempo</h1>
+						<h3>Viaja con <img src="img/logoBlanco.png"></h3>
+						<br>
+						<button class="btn btn-default show type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal2"><strong>REGÍSTRATE</strong></button>
+						<hr>
+						<button class="btn btn-default show"><strong>Conviértete en conductor</strong></button>
+						<button class="btn btn-default hidden"><strong>Descarga el app</strong></button>
+				</div>
+			</div>
+		</div>
+		<!--modal registro-->
+				<div class="modal fade col-md-8 col-md-offset-2" id="myModal2" role="dialog">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal">&times;</button>
+				      </div>
+				      <div class="modal-body">
+				        <form>
+				        	<button class="btn btn-default" id="siCuenta">¿Ya tienes una cuenta?</button>
+				        	<br>
+				        	<h4 id="nuevaCuenta">O CREA UNA CUENTA NUEVA</h4>
+				        	<input type="text" placeholder="Nombre" class="inputMod form-group">
+				        	<input type="text" placeholder="Apellido" class="inputMod form-group">
+				        	<input type="email" placeholder="Correo electrónico" class="inputMod form-group">
+				        	<input type="number" placeholder="Teléfono" class="inputMod form-group">
+				        	<input type="password" placeholder="Contraseña" class="inputMod form-group">
+				        	<input type="text" placeholder="Ciudad" class="inputMod form-group">
+				        	<input type="number" placeholder="(Opcional)Código de invitación" class="inputMod form-group">
+				        	<button class="btn btn-info registro">ENVIAR</button>
+				        </form>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!--fin modal registro-->
+	</section>
+	<section class="container telefono">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="col-md-4">
+					<h2 id="nuevaApp"><strong>La nueva app</strong></h2>
+					<img src="img/iPhone6Plus.png" id="telefono">
+				</div>
+				<div class="col-md-5" id="descarga">
+					<h2><strong>Descarga la nueva app</strong></h2>
+					<p class="parrafoDescripcion">La versión actualizada de LabCar<br>está llena de funciones para llegar<br> a donde quieras aún más fácil y<br>rápido.</p>
+					<p class="parrafoDescripcion">Con sólo tocar un botón, un auto<br>llega justo a tu ubicación. Súbete y<br>no te preocupes: tu conductor sabe<br>exactamente a dónde ir.</p>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<section class="container" id="conduce">
+		<div class="row">
+			<div class="col-md-12" id="convertir">
+				<div class="col-md-4 col-md-offset-8">
+					<h2><strong>Conduce cuando quieras</strong></h2>
+					<p class="parrafoDescripcion">LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+					<button class="btn" id="conductor">Conviértete en conductor</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container" id="ubicacion">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="col-md-6 col-xs-12">
+					<h2><strong>Tarifas</strong></h2>
+					<p class="parrafoDescripcion">Consulta las tarifas LabCar aquí</p>
+					<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+					<button class="btn ubicacion">Ingrese su punto de partida</button>
+					<br>
+					<br>
+					<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+					<button class="btn ubicacion">Ingrese su destino</button>
+				</div>
+				<div class="col-md-6 col-xs-9">
+					<img src="img/mapa.png" id="mapa">
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="col-md-10 col-md-offset-1">
+					<img src="img/logoBlanco.png" id="footerLogo">
+					<hr>
+					<div class="col-md-3 col-md-offset-2">
+						<ul>
+							<li>Viaja</li>
+							<li>Conduce</li>
+							<li>Ciudades</li>
+							<li>Entregas</li>
+							<li>¿Cómo funciona?</li>
+							<li>Países</li>
+							<li>Seguridad</li>
+							<li>Ciudades</li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-md-offset-1">
+						<ul>
+							<li>Oportunidades</li>
+							<li>Nuestra historia</li>
+							<li>API de LabCar</li>
+							<li>Eventos</li>
+							<li>Desarrolladores</li>
+							<li>Servicios</li>
+							<li>Laboratoria</li>
+							<li>Coders</li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-md-offset-9">
+						<img src="img/appstore.png" id="logoApp">
+					</div>
+				</div>
+
+				<div class="col-md-10 col-md-offset-1" id="fin">
+				<hr>
+					<span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>
+					2017 LabCar technologies Inc.
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
