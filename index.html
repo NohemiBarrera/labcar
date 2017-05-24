@@ -12,8 +12,9 @@
 	<header>
 			<!--<div class="container-fluid">-->
 	    <div class="navbar-header navbar-fixed-top menu">
-			<ul class="nav nav-pills">
-				<li><a class="navbar-brand" href="#"><img alt="Brand" src="img/logoForma.png"></a></li>
+	    <a class="navbar-brand" href="#"><img alt="Brand" src="img/logoForma.png"></a>
+			<ul class="nav nav-pills navbar-right">
+				
 				<li><button type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal">Inicia sesión</button></li>
 				<li role="presentation"><a href="#ubicacion">Viaja</a></li>
 				<li role="presentation"><a href="#conduce">Conduce</a></li>
@@ -95,7 +96,9 @@
 				      </div>
 				      <div class="modal-body">
 				        <form>
-				        
+				        	<label for="puertas">¿Tienes un auto de cuatro puertas?</label>
+				        	<input type="text" placeholder="Nombre" class="inputMod form-group" id="puertas">
+				        		
 				        </form>
 				      </div>
 				    </div>
@@ -144,7 +147,7 @@
 					<button class="btn ubicacion">Ingrese su destino</button>
 				</div>
 				<div class="col-md-6 col-xs-9">
-					<img src="img/mapa.png" id="mapa">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d61651662.27123489!2d-99.18225918598077!3d19.415912356722355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1495658004967" width="600" height="450" frameborder="0" style="border:0" allowfullscreen id="mapa"></iframe>
 				</div>
 			</div>
 		</div>
