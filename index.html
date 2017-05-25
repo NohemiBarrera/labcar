@@ -88,22 +88,50 @@
 				</div>
 				<!--fin modal registro-->
 				<!--modal conductor-->
-				<div class="modal fade col-md-8 col-md-offset-2" id="myModal3" role="dialog">
-				  <div class="modal-dialog">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <button type="button" class="close" data-dismiss="modal">&times;</button>
-				      </div>
-				      <div class="modal-body">
-				        <form>
-				        	<label for="puertas">¿Tienes un auto de cuatro puertas?</label>
-				        	<input type="text" placeholder="Nombre" class="inputMod form-group" id="puertas">
-				        		
-				        </form>
-				      </div>
-				    </div>
-				  </div>
-				</div>
+				<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        			<div class="modal-dialog" role="document">
+            			<div class="modal-content">
+               				<div class="modal-header">
+                    			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    			<h4 class="modal-title" id="exampleModalLabel">DATOS DEL CONDUCTOR</h4>
+                			</div>
+                		<div class="modal-body">
+                    	<form>
+                        	<P class="conductorDrop">¿TIENES UN VEHICULO DE CUATRO PUERTAS?</P>
+                        	<select class="form-control">
+	                            <option>Sí</option>
+	                            <option>No</option>
+                        	</select>
+                        	<P class="conductorDrop">MARCA</P>
+	                        <select class="form-control">
+	                            <option>Elige la marca del vehiculo</option>
+	                            <option>NO</option>
+	                        </select>
+	                        <p class="conductorDrop">¿No ves tu vehículo en la lista?Envía un correo electrónico a <link rel="stylesheet" type="text/css" href="">sociosmvd@uber.com</p>
+	                        <p class="conductorDrop">MODELO</p>
+	                        <select class="form-control">
+	                            <option>Elige el modelo del vehiculo</option>
+	                            <option>NO</option>
+	                        </select>
+	                        <p class="conductorDrop">AÑO</p>
+	                        <select class="form-control">
+	                            <option>Elige el año del vehiculo</option>
+	                            <option>NO</option>
+	                        </select>
+	                        <p class="conductorDrop">NÚMERO DE LA MATRÍCULA</p>
+                        	<div class="form-group">
+                            	<input type="password" class="form-control" id="inputPassword" placeholder="Número de la matrícula">
+                       		</div>
+                        	<p class="conductorDrop">La información de tu matrícula ayuda a los clientes a identificar tu vehículo</p>
+                    	</form>
+                		</div>
+		                	<div class="modal-footer">
+		                    	<button type="button" class="btn btn-primary  btn-lg btn-block">Enviar</button>
+		                	</div>
+           				</div>
+        			</div>
+    			</div>
+
 				<!--fin modal conductor-->
 	</section>
 	<section class="container telefono">
