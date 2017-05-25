@@ -49,6 +49,7 @@ a{
 	background-position: bottom;
 	background-size: cover;
 	height: 750px;
+	margin-right: 0;
 }
 .btn-lg{
 	background-color: transparent;
