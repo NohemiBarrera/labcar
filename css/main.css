@@ -31,7 +31,14 @@ a{
 	background-color: white;
 }
 #inicioSesion{
-	padding-top: 50px;
+	padding-top: 0;
+	
+}
+#miau{
+	background-image: url(../img/taxi.jpg);
+	background-position: bottom;
+	background-size: cover;
+	height: 750px;
 }
 .btn-lg{
 	background-color: transparent;
@@ -186,6 +193,10 @@ p>a{
 }
 .conductorDrop{
 	color: black;
+	font-size: 14px;
+}
+#correoUber{
+	font-size: 12px;
 }
 option{
 	color: grey;
