@@ -20,7 +20,17 @@
 	justify-content: space-around;
 	background-color: #000;
 }*/
-
+.navbar-collapse ul li {
+ padding-top: 0px;
+ padding-bottom: 0px;
+            }
+ .navbar-collapse ul li a {
+ padding-top: 0px;
+ padding-bottom: 0px;
+}
+.logotipo{
+	margin-left: 20px;
+}
 a{
 	text-decoration: none;
 	color: black;
